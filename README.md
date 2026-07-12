@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project develops machine learning models to predict whether an online shopping session will result in a completed purchase using the **Online Shoppers Purchasing Intention Dataset**. The project applies Apache Spark for scalable data processing, Spark SQL for data analysis, and Spark MLlib for predictive modelling.
+Finance and business industry is selected as the main topic of this project. The Online Shoppers Purchasing Intention Dataset was selected because it addresses a real-world business problem in the e-commerce industry, which is to predict whether a customer's online browsing session will result in a completed purchase. This project develops machine learning models to predict whether an online shopping session will result in a completed purchase using the **Online Shoppers Purchasing Intention Dataset**. The project applies Apache Spark for scalable data processing, Spark SQL for data analysis, and Spark MLlib for predictive modelling.
 
 The dataset contains customer browsing behaviour, website interaction metrics, visitor characteristics, and purchasing outcomes. Through exploratory data analysis (EDA), feature engineering, and classification modelling, the project identifies the behavioural factors that most strongly influence customer purchasing decisions.
 
