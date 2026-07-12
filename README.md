@@ -30,7 +30,7 @@ online-shopping-purchase-intention-prediction
 │   ├── Feature encoding
 │   └── Feature engineering
 │
-├── 2. Exploratory Data Analysis
+├── 2. Exploratory Data Analysis/Spark SQL Analysis
 │   ├── Revenue distribution
 │   ├── Visitor type analysis
 │   ├── Monthly shopping trend
@@ -41,13 +41,12 @@ online-shopping-purchase-intention-prediction
 │   ├── Correlation heatmap
 │   └── Business insights
 │
-├── 3. Spark SQL Analysis
+├── 3. Data Visualization
 │   ├── Revenue distribution
-│   ├── Visitor segmentation
+│   ├── Visitor type
 │   ├── Monthly purchase analysis
 │   ├── Weekend purchasing behaviour
-│   ├── Customer engagement analysis
-│   └── Business interpretation
+│   └──Bounce Rate and Exit Rate analysis
 │
 ├── 4. Machine Learning
 │   ├── Logistic Regression
@@ -59,10 +58,14 @@ online-shopping-purchase-intention-prediction
 │   └── Best model selection
 │
 └── 5. Business Recommendations
-    ├── Customer behaviour insights
-    ├── Marketing recommendations
-    ├── Website optimization
-    ├── Conversion optimization
+    ├── Website Navigation and User Experience
+    ├── Personalized Product Recommendation Systems
+    ├── Develop Real-Time Purchase Prediction for Personalized Marketing
+    ├── Strengthen Customer Acquisition Strategies
+    ├── Optimize Marketing Campaigns Based on Seasonal Trends
+    ├── Leverage Weekend Shopping Behaviour
+    ├── Utilize Feature Importance for Business Decision-Making
+    ├── Continuously Monitor and Retrain the Prediction Model
     └── Conclusion
 ```
 
@@ -396,18 +399,73 @@ Potential future enhancements include:
 
 - Hyperparameter tuning using Cross Validation
 - Class imbalance handling using class weighting or SMOTE
-- Additional machine learning algorithms (e.g., XGBoost, Gradient Boosting)
+- Additional machine learning algorithms 
 - Real-time prediction using Spark Structured Streaming
 - Customer segmentation using clustering techniques
 
 ---
 
-# Author
+# Instructions to Reproduce the Analysis
 
-**Than Tian En**
+Follow the steps below to reproduce the complete data preprocessing, exploratory data analysis, machine learning modelling, and evaluation presented in this project.
 
-Master of Data Science
+---
 
-Universiti Kebangsaan Malaysia (UKM)
+## 1. Install Required Software
 
-Course: **STQD6324 Data Management**
+Ensure the following software is installed on your computer:
+
+- Python 3.10 or above
+- Apache Spark 3.x
+- Java Development Kit (JDK 8 or above)
+- Jupyter Notebook or JupyterLab
+
+---
+
+## 2. Prepare the Dataset
+
+Download the **Online Shoppers Purchasing Intention Dataset** from the UCI Machine Learning Repository.
+
+---
+
+## 3. Launch Jupyter Notebook
+
+Start Jupyter Notebook from the project directory.
+
+```bash
+jupyter notebook
+```
+
+## 4. Execute the Notebook
+
+Run all notebook cells sequentially from top to bottom.
+
+The notebook performs the following tasks automatically:
+
+1. Load the dataset into Apache Spark.
+2. Perform data cleaning and preprocessing.
+3. Conduct exploratory data analysis (EDA).
+4. Execute Spark SQL queries for business analysis.
+5. Perform data visualization.
+6. Perform feature engineering.
+7. Train Logistic Regression, Decision Tree, and Random Forest models.
+8. Evaluate model performance using Accuracy, Precision, Recall, F1-score, and ROC-AUC.
+9. Generate feature importance and business insights.
+
+---
+
+## 7. Expected Outputs
+
+After successful execution, the notebook will produce:
+
+- Dataset summary and descriptive statistics.
+- Data cleaning results.
+- Revenue distribution and customer behaviour visualizations.
+- Spark SQL analytical summaries.
+- Meaningful Plot and Graphic.
+- Machine learning model predictions.
+- Performance comparison of Logistic Regression, Decision Tree, and Random Forest.
+- Random Forest feature importance visualization.
+- Business insights and recommendations.
+
+---
